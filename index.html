@@ -6,16 +6,17 @@
     <meta charset="utf-8">
     <style type="text/css"></style>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
 </head>
 
-<body>
+<body style="background: rgb(167,209,197);">
     <h2 align="center">Let's get acquainted</h2>
     <div>
         <form autocomplete="off" enctype="multipart/form-data" action="workers.php" method="get">
             <p> <b>What is your name?</b><br>
-                <input type="text" name="name" placeholder="write your name" required="">
-                <input type="text" name="first name" placeholder="write your first name" required="">
-                <input type="text" name="last name" placeholder="write your last name" required="">
+                <input style="background: lightgrey" type="text" name="name" placeholder="write your name" required="">
+                <input style="background: lightgrey" type="text" name="first name" placeholder="write your first name" required="">
+                <input style="background: lightgrey" type="text" name="last name" placeholder="write your last name" required="">
             </p>
             <p> <b>Date of birthday</b>
                 <select name="day">
@@ -45,7 +46,7 @@
                     <option value="12">12</option>
                 </select>
                 <select name="year">
-                    <option>year</option>
+                    <option style="background: lightgrey">year</option>
                     <option value="1990">1990</option>
                     <option value="1991">1991</option>
                     <option value="1993">1992</option>
@@ -54,7 +55,7 @@
                 <input type="radio" name="sex" value="M" required="">Male
                 <input type="radio" name="sex" value="F" required="">Famale
             </p><b>Phone number</b><br>
-            <input type="number" name="phonenumber">
+            <input style="background: lightgrey" type="number" name="phonenumber">
             <P><b>Expirience in other Companies</b>
                 <input type="radio" name="expirience" required="">Yes
                 <input type="radio" name="expirience" required="">No
@@ -68,16 +69,17 @@
                 <input type="checkbox" name="REACT">REACT<br>
             </p>
             <p><b>Write your best short joke</b><br>
-                <textarea cols="30" rows="5"></textarea><br>
+                <textarea style="background: lightgrey" cols="30" rows="5"></textarea><br>
                 <b>Add your CV here:</b>
                 <input type="file" name="files">
             </P>
             <p><b>Write your password</b><br>
-                <input type="password" name="password" required="">
+                <input style="background: lightgrey" type="password" name="password" required="">
             </p>
-            <input type="submit" name="" value="Save">
+            <input style="color: red" type="submit" name="" value="Save">
             <input type="reset" name="" value="Reset">
         </form>
+        <button  style="margin-top: 25px" type="button" class="btn btn-success">Success</button>
 </body>
 
 </html>
